@@ -1,0 +1,76 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 560 >>
+stream
+BT
+/F1 11 Tf
+14 TL
+72 720 Td
+(Acme Home Devices Limited Warranty) Tj T*
+() Tj T*
+(Acme Home Devices is a fictional company used for demonstration purposes.) Tj T*
+() Tj T*
+(Coverage) Tj T*
+() Tj T*
+(All Acme devices come with a two-year limited warranty from the date of purchase. The) Tj T*
+(warranty covers defects in materials and workmanship under normal use.) Tj T*
+() Tj T*
+(The warranty does not cover accidental damage, water damage, normal wear and tear,) Tj T*
+(cosmetic scratches, or damage caused by unauthorised repairs or modifications.) Tj T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 675 >>
+stream
+BT
+/F1 11 Tf
+14 TL
+72 720 Td
+(Making a warranty claim) Tj T*
+() Tj T*
+(To make a warranty claim, contact support with your order number, the device serial) Tj T*
+(number, and a short description of the problem. We may ask for photos or a video of the) Tj T*
+(fault.) Tj T*
+() Tj T*
+(If the claim is approved, we will repair or replace the device at no cost, including) Tj T*
+(shipping. Replacement devices are covered for the remainder of the original warranty) Tj T*
+(period.) Tj T*
+() Tj T*
+(Extended warranty) Tj T*
+() Tj T*
+(Customers on the Acme Protect Plus or Pro plan receive an extended warranty of three) Tj T*
+(additional years on all registered devices.) Tj T*
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000317 00000 n 
+0000000928 00000 n 
+0000001054 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+1780
+%%EOF

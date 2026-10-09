@@ -1,0 +1,11 @@
+[project]
+name = "ai-support-backend"
+version = "0.1.0"
+description = "FastAPI backend for the AI customer support automation system"
+requires-python = ">=3.11,<3.14"
+
+[tool.pytest.ini_options]
+testpaths = ["app/tests"]
+addopts = "-ra"
+# Treat warnings as errors so deprecations are fixed when they appear, not at upgrade time.
+filterwarnings = ["error"]

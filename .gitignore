@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Environment / secrets
+.env
+.env.local
+*.env
+!.env.example
+
+# Database
+*.db
+*.db-journal
+*.sqlite3
+
+# Local storage (uploaded files + vector index)
+backend/storage/uploads/*
+backend/storage/vector_index/*
+!backend/storage/**/.gitkeep
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+.vite/
+
+# Logs
+*.log
+logs/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

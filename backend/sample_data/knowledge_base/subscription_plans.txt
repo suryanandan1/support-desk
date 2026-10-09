@@ -1,0 +1,17 @@
+Acme Protect subscription plans
+
+Acme Home Devices is a fictional company used for demonstration purposes.
+
+Acme Protect adds cloud video storage and professional monitoring to your devices. All plans are billed monthly or yearly and can be cancelled at any time.
+
+Basic plan: $4.99 per month or $49.99 per year. Includes 7 days of cloud video history for up to 2 cameras and mobile alerts.
+
+Plus plan: $9.99 per month or $99.99 per year. Includes 30 days of cloud video history for unlimited cameras, mobile alerts, smart person detection, and an extended warranty on all registered devices.
+
+Pro plan: $19.99 per month or $199.99 per year. Includes 60 days of cloud video history for unlimited cameras, 24/7 professional monitoring with emergency dispatch, and an extended warranty on all registered devices.
+
+Free trial: new customers get a 30-day free trial of the Plus plan. You will not be charged if you cancel before the trial ends.
+
+Cancelling a subscription: cancel at any time under Settings > Subscriptions. Monthly plans stay active until the end of the current billing month. Yearly plans cancelled within the first 30 days receive a prorated refund. After 30 days, yearly plans are not refunded but stay active until the end of the billing year.
+
+Payment methods: we accept Visa, Mastercard, American Express, PayPal, and Apple Pay. We do not accept cryptocurrency such as Bitcoin, and we do not accept cheques.
