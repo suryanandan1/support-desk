@@ -54,6 +54,8 @@ class Message(Base):
     """One chat turn. Agent replies are stored in ticket_messages, not here."""
 
     __tablename__ = "messages"
+    # A client-generated id makes "retry send" idempotent: the same id is never stored twice.
+    __table_args__ = (UniqueConstraint("conversation_id", "client_message_id"),)
 
     id: Mapped[int] = mapped_column(primary_key=True)
     conversation_id: Mapped[int] = mapped_column(
@@ -61,6 +63,7 @@ class Message(Base):
     )
     role: Mapped[MessageRole] = mapped_column(enum_type(MessageRole))
     content: Mapped[str] = mapped_column(Text)
+    client_message_id: Mapped[str | None] = mapped_column(String(64))
     # Set on AI messages only.
     answer_status: Mapped[AnswerStatus | None] = mapped_column(enum_type(AnswerStatus), index=True)
     # Retrieval scores, thresholds, model name, latency. Never secrets or prompts.
