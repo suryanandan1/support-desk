@@ -185,7 +185,8 @@ def test_strong_evidence_is_sufficient():
         "How long do refunds take?", _retrieval([chunk("Refunds take 5 days.", score=0.8)]), min_chunks=1, min_coverage=0.3
     )
 
-    assert verdict.sufficient and verdict.coverage == 1.0
+    assert verdict.sufficient
+    assert verdict.coverage == pytest.approx(2 / 3)  # "long" is not in the passage
 
 
 def test_groundedness_rewards_answers_that_stay_within_the_sources():
@@ -320,6 +321,8 @@ def test_short_follow_ups_borrow_the_previous_question_for_retrieval():
     history = [ChatMessage("user", "How much does express shipping cost?"), ChatMessage("assistant", "$14.99")]
 
     assert build_retrieval_query("and next-day?", history) == "How much does express shipping cost?\nand next-day?"
+    assert build_retrieval_query("Is it free?", history).startswith("How much does express shipping cost?")
+    # Short but self-contained questions are not follow-ups.
     assert build_retrieval_query("How do I reset my password?", history) == "How do I reset my password?"
 
 

@@ -11,6 +11,7 @@ Nothing here touches conversations or tickets; chat_service persists the result.
 """
 
 import logging
+import re
 import time
 from dataclasses import dataclass, field
 from typing import Any
@@ -45,9 +46,17 @@ class PipelineResult:
     metadata: dict[str, Any] = field(default_factory=dict)
 
 
+# Openers and pronouns that only make sense with the previous question ("and express?",
+# "is it free?", "what about Canada?").
+_FOLLOW_UP_CUES = re.compile(
+    r"^\s*(and|also|what about|how about|what if|same for|then)\b|\b(it|that|this|they|them|those|these)\b",
+    re.IGNORECASE,
+)
+
+
 def build_retrieval_query(question: str, history: list[ChatMessage]) -> str:
-    """Give short follow-ups ("and for express?") the context of the previous question."""
-    if len(terms(question)) < 3:
+    """Give short follow-up questions the context of the previous customer question."""
+    if len(terms(question)) <= 3 and _FOLLOW_UP_CUES.search(question):
         previous = next((m.content for m in reversed(history) if m.role == "user"), None)
         if previous:
             return f"{previous}\n{question}"
